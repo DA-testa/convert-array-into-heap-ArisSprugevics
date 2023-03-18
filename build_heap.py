@@ -67,8 +67,9 @@ def main():
         text = input()
         with open(text) as f:
             n = int(f.readline())
-            data = list(map(int, f.readlines().split()))
-    
+            # data = list(map(int, f.readlines().split()))
+            data = list(map(int, f.readline().split()))
+            
 
     # checks if lenght of data is the same as the said lenght
     assert len(data) == n
@@ -89,8 +90,8 @@ def main():
     # output all swaps
    
 
-    print("sorted: ")
-    print(data)
+    # print("sorted: ")
+    # print(data)
 
 
 if __name__ == "__main__":
