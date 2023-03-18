@@ -57,7 +57,7 @@ def main():
     # first two tests are from keyboard, third test is from a file
 
     text = input()
-
+    data = []
     if text == "I": # input from keyboard
         n = int(input())
         data = list(map(int, input().split()))
