@@ -67,7 +67,7 @@ def main():
         print(0)
         # fails.write(0)
     else:
-        print(len(swaps), end=" ")
+        print(len(swaps))
         # fails.write(str(len(swaps))+"\n")
         for i, j in swaps:
             print(i, j, end=" ")
