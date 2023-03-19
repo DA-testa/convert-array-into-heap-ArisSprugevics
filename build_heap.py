@@ -43,19 +43,13 @@ def main():
     text = input()
     data = []
     n = 0
-    flag = True
-    try:
-        text = int(text)
-    except:
-        flag = False
-
-    if flag: # input from keyboard
-        n = text
+    if text == "I": # input from keyboard
+        n = int(input())
         data = list(map(int, input().split()))
 
-    else: # input from file
-        # text = input()
-        with open(text) as f:
+    elif text == "F": # input from file
+        text = input()
+        with open("test/" + text) as f:
             n = int(f.readline())
             data = list(map(int, f.readline().split()))
             
