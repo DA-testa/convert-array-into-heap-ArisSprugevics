@@ -48,8 +48,8 @@ def main():
         data = list(map(int, input().split()))
 
     elif text == "F": # input from file
-        text = input()
-        with open("test/" + text) as f:
+        text = "tests/04"
+        with open(text) as f:
             n = int(f.readline())
             data = list(map(int, f.readline().split()))
             
@@ -67,10 +67,10 @@ def main():
         print(0)
         # fails.write(0)
     else:
-        print(len(swaps))
+        print(len(swaps),end ="")
         # fails.write(str(len(swaps))+"\n")
         for i, j in swaps:
-            print(i, j)
+            print(i, j,end="")
             # fails.write(str(i) +" "+ str(j)+"\n")
     # fails.close()
     # output all swaps
