@@ -43,7 +43,7 @@ def main():
     text = input()
     data = []
     n = 0
-    if text == "I": # input from keyboard
+    if text[0] == "I": # input from keyboard
         n = int(input())
         data = list(map(int, input().split()))
 
