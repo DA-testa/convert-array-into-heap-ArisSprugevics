@@ -48,8 +48,8 @@ def main():
         data = list(map(int, input().split()))
 
     elif text == "F": # input from file
-        text = input()
-        with open(text) as f:
+        filename = "tests/04"
+        with open(filename) as f:
             n = int(f.readline())
             data = list(map(int, f.readline().split()))
             
